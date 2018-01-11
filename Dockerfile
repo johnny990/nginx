@@ -33,7 +33,8 @@ RUN cd nginx-1.13.8 && \
   --add-module=/home/nginx/lua-nginx-module-0.10.12rc1 && \
  make && make install
 			
-			
-USER nginx
+COPY nginx /etc/init.d/nginx
+RUN chmod 755 /etc/init.d/nginx			
+RUN chown -R nginx:nginx /opt/nginx
 
-ENTRYPOINT /bin/bash
+CMD ["/etc/init.d/nginx"]

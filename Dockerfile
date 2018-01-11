@@ -37,4 +37,5 @@ COPY nginx /etc/init.d/nginx
 RUN chmod 755 /etc/init.d/nginx			
 RUN chown -R nginx:nginx /opt/nginx
 
-CMD ["/etc/init.d/nginx"]
+CMD ["/opt/nginx/sbin/nginx", "-g daemon off;"]
+

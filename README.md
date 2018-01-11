@@ -31,3 +31,4 @@ Original task was not described in detailed, so it was decided to implement it i
 - Jenkins URL with r/o access: [http://ec2-54-212-221-58.us-west-2.compute.amazonaws.com:8080/](http://ec2-54-212-221-58.us-west-2.compute.amazonaws.com:8080/)
 - GitHub repo URL: [https://github.com/johnny990/nginx](https://github.com/johnny990/nginx)
 
+
